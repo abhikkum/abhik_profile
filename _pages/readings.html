@@ -1,0 +1,48 @@
+---
+layout: default
+title: Readings
+permalink: /readings/
+description: Notes, highlights, and reading list.
+---
+<section class="hero">
+  <div class="container hero-content">
+    <div>
+      <span class="kicker">Readings</span>
+      <h1>Books, papers, and essays shaping my work.</h1>
+      <p>
+        A rotating list of what I am reading, with quick notes and takeaways.
+      </p>
+    </div>
+    <div class="hero-panel reveal">
+      <h3>Currently</h3>
+      <ul>
+        <li><span>Design justice</span><strong>Book</strong></li>
+        <li><span>Human-AI teams</span><strong>Paper</strong></li>
+        <li><span>Urban systems</span><strong>Essay</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Recent notes</h2>
+    <div class="list">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts limit: 6 %}
+          <article class="list-item reveal">
+            <span class="badge">{{ post.category | default: "Reading" }}</span>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.date | date: "%B %d, %Y" }} · {{ post.excerpt | strip_html }}</p>
+          </article>
+        {% endfor %}
+      {% else %}
+        <article class="list-item reveal">
+          <span class="badge">Update</span>
+          <h3>Notes coming soon</h3>
+          <p>I will add summaries and highlights here.</p>
+        </article>
+      {% endif %}
+    </div>
+  </div>
+</section>

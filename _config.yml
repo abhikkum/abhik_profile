@@ -1,0 +1,11 @@
+title: Abhik Kumar
+email: abhik.kumar@example.com
+description: Personal profile, research, and projects.
+baseurl: ""
+url: ""
+markdown: kramdown
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+permalink: /blog/:title/
