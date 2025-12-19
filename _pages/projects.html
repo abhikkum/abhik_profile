@@ -8,17 +8,18 @@ description: Selected projects and case studies.
   <div class="container hero-content">
     <div>
       <span class="kicker">Projects</span>
-      <h1>Selected builds and collaborations.</h1>
+      <h1>Building systems.</h1>
+      <h2>Research and build work across embedded, RF, and systems.</h2>
       <p>
-        A growing set of projects that focus on clarity, trust, and usability.
+        Selected projects spanning SoC design, embedded systems, and interactive hardware.
       </p>
     </div>
     <div class="hero-panel reveal">
       <h3>Focus areas</h3>
       <ul>
-        <li><span>Health systems</span><strong>UX</strong></li>
-        <li><span>Civic tech</span><strong>Data</strong></li>
-        <li><span>AI tools</span><strong>Ethics</strong></li>
+        <li><span>Embedded systems</span><strong>RTOS</strong></li>
+        <li><span>Mixed-signal IC</span><strong>Design</strong></li>
+        <li><span>Wearables</span><strong>Interaction</strong></li>
       </ul>
     </div>
   </div>
@@ -26,28 +27,62 @@ description: Selected projects and case studies.
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Featured work</h2>
-    <div class="portfolio-grid">
-      <article class="portfolio-item reveal">
-        <div class="portfolio-art"></div>
-        <div class="portfolio-body">
-          <h3>CareLoop</h3>
-          <p>Patient engagement platform focused on long-term care.</p>
+    <h2 class="section-title">Research & Project Work</h2>
+    <div class="list">
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>Spectrum Analyzer SoC Design and Tape-out (TSMC 180nm)</h3>
+          <span class="item-date">May 2025</span>
         </div>
+        <ul class="item-points">
+          <li>Designed a full-chip spectrum analyzer integrating PLL, mixer, filters, and I/O in Cadence Virtuoso on TSMC 180nm.</li>
+          <li>Implemented analog/mixed-signal IPs including PLL, passive mixer, S/D converters, low-pass filter, and memory block.</li>
+          <li>Validated blocks via PEX simulations; built testbench and measurement plan for chip specs.</li>
+        </ul>
       </article>
-      <article class="portfolio-item reveal">
-        <div class="portfolio-art"></div>
-        <div class="portfolio-body">
-          <h3>Pulse City</h3>
-          <p>Real-time dashboards for city operations teams.</p>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>Pipeline ADC Design (1-bit per stage)</h3>
+          <span class="item-date">May 2025</span>
         </div>
+        <ul class="item-points">
+          <li>Designed an 8-bit pipeline ADC (1-bit/stage) with clean bit alignment and simplified stage-level debugging.</li>
+          <li>Built and verified key subblocks—T/H, comparator, DAC, and gain stages—meeting 2 MHz rate and &gt;43 dB SNDR.</li>
+          <li>Validated via MATLAB INL/DNL/FFT; achieved 6.91 ENOB and 0.84 W power, analyzed FOM.</li>
+        </ul>
       </article>
-      <article class="portfolio-item reveal">
-        <div class="portfolio-art"></div>
-        <div class="portfolio-body">
-          <h3>Signal Stories</h3>
-          <p>Interactive storytelling for climate data.</p>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>Configurable Logic Block (CLB) Design & Optimization</h3>
+          <span class="item-date">Dec 2024</span>
         </div>
+        <ul class="item-points">
+          <li>Designed a CLB in Cadence 45nm integrating a 16:1 LUT using SRAM, muxes, and control logic.</li>
+          <li>Optimized LUT with internal inverters, transistor sizing, and SRAM precharge circuitry.</li>
+          <li>Achieved 784.313 MHz, 723600 nm², and 2.2904 pJ; full DRC/LVS compliance.</li>
+        </ul>
+      </article>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>Smart Plant Survival System</h3>
+          <span class="item-date">May 2025</span>
+        </div>
+        <ul class="item-points">
+          <li>Designed a 4-layer PCB with SAMD21 and WINC1500 (PCBWAY) for automated plant monitoring/irrigation.</li>
+          <li>Integrated soil, air, and NPK sensors with motor, pump, and buzzer over I2C using FreeRTOS.</li>
+          <li>Built a Node-RED dashboard for remote control/alerts; improved irrigation and reduced water use by 25%.</li>
+        </ul>
+      </article>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>DJ Gloves: Interactive Music Control System</h3>
+          <span class="item-date">Dec 2024</span>
+        </div>
+        <ul class="item-points">
+          <li>Built a wearable mapping hand gestures and motion to MIDI control using IMU, LCDs, and sensor fusion.</li>
+          <li>Used ADXL335 accelerometers, Neopixel rings, Zigbee (XBee S2C), ATMega32PB, and a custom Python MIDI bridge.</li>
+          <li>Enabled low-latency gesture recognition and audio control via interrupt-driven sampling and SPI/LCD integration.</li>
+        </ul>
       </article>
     </div>
   </div>
