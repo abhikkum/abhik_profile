@@ -1,22 +1,29 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div class="footer-profile">
-      <img class="footer-avatar" src="{{ "/img/Abhik_Pic.png" | relative_url }}" alt="Abhik Kumar" />
-      <div>
-        <h3>{{ site.title }}</h3>
-        <p>{{ site.description }}</p>
+      <div class="footer-profile-main">
+        <img class="footer-avatar" src="{{ "/img/Abhik_Pic.png" | relative_url }}" alt="Abhik Kumar" />
+        <div>
+          <h3>{{ site.title }}</h3>
+          <p>{{ site.description }}</p>
+        </div>
+      </div>
+      <div class="university-logo">
+        <img src="{{ "/img/UniversityofPennsylvania_FullLogo_RGB.svg" | relative_url }}" alt="University of Pennsylvania" />
       </div>
     </div>
     <div>
       <h4>Explore</h4>
+      <a href="{{ "/experience/" | relative_url }}">Experience</a><br />
       <a href="{{ "/projects/" | relative_url }}">Projects</a><br />
       <a href="{{ "/publications/" | relative_url }}">Publications</a><br />
-      <a href="{{ "/readings/" | relative_url }}">Readings</a>
     </div>
     <div>
       <h4>Connect</h4>
       <a href="mailto:abhikkum@seas.upenn.edu">abhikkum@seas.upenn.edu</a><br />
-      <a href="{{ "/contact/" | relative_url }}">Contact page</a>
+      <a href="https://www.upenn.edu/">University of Pennsylvania, Philadelphia, PA</a><br />
+      <a href="https://www.linkedin.com/in/abhikkumar/">LinkedIn</a><br />
+      <a href="https://github.com/abhikkum">GitHub</a><br />
     </div>
   </div>
 </footer>

@@ -6,11 +6,11 @@
   url: /experience/
 - title: Projects
   url: /projects/
-- title: Readings
-  url: /readings/
 - title: Publications
   url: /publications/
+- title: Readings
+  url: /readings/
 - title: Curiosity
   url: /curiosity/
-- title: Contact
-  url: /contact/
+# - title: Contact
+#   url: /contact/

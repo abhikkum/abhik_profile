@@ -15,11 +15,12 @@ description: Notes, highlights, and reading list.
       </p>
     </div>
     <div class="hero-panel reveal">
-      <h3>Currently</h3>
+      <h3>Must read</h3>
       <ul>
-        <li><span>Design justice</span><strong>Book</strong></li>
-        <li><span>Human-AI teams</span><strong>Paper</strong></li>
-        <li><span>Urban systems</span><strong>Essay</strong></li>
+        <li><span><a href="https://spectrum.ieee.org/magazine">IEEE Spectrum</a></span><strong>Magazine</strong></li>
+        <li><span><a href="https://phys.org/">phys.org</a></span><strong>News</strong></li>
+        <li><span><a href="https://interestingengineering.com/">Interesting Engineering</a></span><strong>News</strong></li>
+        <li><span><a href="https://news.ycombinator.com/">Hacker News</a></span><strong>Community</strong></li>
       </ul>
     </div>
   </div>
@@ -27,23 +28,23 @@ description: Notes, highlights, and reading list.
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Recent notes</h2>
+    <h2 class="section-title">Bookmarks</h2>
     <div class="list">
-      {% if site.posts.size > 0 %}
-        {% for post in site.posts limit: 6 %}
-          <article class="list-item reveal">
-            <span class="badge">{{ post.category | default: "Reading" }}</span>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p>{{ post.date | date: "%B %d, %Y" }} · {{ post.excerpt | strip_html }}</p>
-          </article>
-        {% endfor %}
-      {% else %}
-        <article class="list-item reveal">
-          <span class="badge">Update</span>
-          <h3>Notes coming soon</h3>
-          <p>I will add summaries and highlights here.</p>
-        </article>
-      {% endif %}
+      <article class="list-item reveal">
+        <span class="badge">Reference</span>
+        <h3><a href="https://www.01xz.net/wiki/Main_Page">Linux Kernel Newbies</a></h3>
+        <p>Linux Kernel Newbies is my go‑to reference when I need a grounded, practical explanation of kernel subsystems. It collects guides, notes, and curated links that help me navigate device drivers, memory management, scheduling, and debugging workflows. I use it to cross‑check terminology, trace concepts to primary sources, and keep a crisp map of the kernel ecosystem while building or reviewing low‑level work.</p>
+      </article>
+      <article class="list-item reveal">
+        <span class="badge">Course</span>
+        <h3><a href="https://www.seas.upenn.edu/~ese5320/">ESE 5320: SOC-Architecture</a></h3>
+        <p>The ESE 5320 course page is a compact, high‑signal hub for embedded software and systems. It provides lecture material, labs, and project context that align with the way I structure firmware builds, testing, and documentation. I revisit it to refresh architecture patterns, review lab expectations, and borrow clean teaching examples that translate directly into real‑world embedded workflows.</p>
+      </article>
+      <article class="list-item reveal">
+        <span class="badge">Blog</span>
+        <h3><a href="https://github.blog/">GitHub Blog</a></h3>
+        <p>The GitHub Blog is where I track platform changes and engineering decisions that affect day‑to‑day development. It covers product updates, security advisories, and deep dives into tooling and infrastructure. I read it to understand new workflows, anticipate CI/CD or security policy shifts, and pick up pragmatic tips from real engineering teams shipping and maintaining large‑scale codebases.</p>
+      </article>
     </div>
   </div>
 </section>
