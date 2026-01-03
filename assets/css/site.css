@@ -906,6 +906,27 @@ body:not(.theme-dark) .theme-toggle:focus-visible .toggle-text-light,
   color: var(--muted);
 }
 
+.item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 6px;
+}
+
+.item-tags span {
+  background: rgba(240, 90, 40, 0.12);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.theme-dark .item-tags span {
+  background: rgba(242, 185, 80, 0.18);
+  color: var(--ink);
+}
+
 .list-media .list-item {
   grid-template-columns: minmax(0, 1fr) 120px;
   gap: 18px;
