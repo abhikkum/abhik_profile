@@ -17,9 +17,13 @@ description: Selected projects and case studies.
     <div class="hero-panel reveal">
       <h3>Focus areas</h3>
       <ul>
+        <li><span>Computer Architecture</span><strong>RISC-V / ASIC</strong></li>
+        <li><span>HW/SW Co-Design</span><strong>FPGA Acceleration</strong></li>
         <li><span>Embedded systems</span><strong>RTOS</strong></li>
-        <li><span>Mixed-signal IC</span><strong>Design</strong></li>
-        <li><span>Wearables</span><strong>Interaction</strong></li>
+        <li><span>Hardware Engineering</span><strong>PCB Architecture</strong></li>
+        <li><span>Sensor Fusion</span><strong>I2C / SPI / CAN / USART</strong></li>
+        <li><span>Edge Computing</span><strong>Azure / MQTT</strong></li>
+        
       </ul>
     </div>
   </div>
@@ -29,6 +33,74 @@ description: Selected projects and case studies.
   <div class="container">
     <h2 class="section-title">Research & Project Work</h2>
     <div class="list">
+       </article>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>
+            <a class="section-title-link" href="https://www.cis.upenn.edu/~cis5710/current/">Pipelined RISC-V Processor Design</a>
+          </h3>
+          <span class="item-date">Present</span>
+        </div>
+        <div class="item-tags">
+          <span>RV32IM</span>
+          <span>SystemVerilog / RTL</span>
+          <span>Data cache</span>
+          <span>Branch prediction</span>
+          <span>Verilator</span>
+          <span>FPGA</span>
+          <span>ByPass</span>
+          <span>Data Hazard</span>
+        </div>
+        <ul class="item-points">
+          <li>Architected a custom pipelined RV32IM RISC-V core with an integrated data cache in SystemVerilog.</li>
+          <li>Engineered branch prediction, out-of-order execution, and bypass/stall logic to resolve pipeline data hazards.</li>
+          <li>Synthesized RTL with Yosys to FPGA and validated logic via Verilator testbenches and waveform debug.</li>
+        </ul>
+      </article>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>
+            <a class="section-title-link" href="https://mflowgen.readthedocs.io/en/stable/">TSMC 45nm RISC-V SoC Tape-Out</a>
+          </h3>
+          <span class="item-date">Present</span>
+        </div>
+        <div class="item-tags">
+          <span>Chipyard</span>
+          <span>RTL-to-GDSII</span>
+          <span>mflowgen</span>
+          <span>TSMC 45nm</span>
+          <span>Innovus</span>
+          <span>IR drop</span>
+          <span>Clock Tree</span>
+        </div>
+        <ul class="item-points">
+          <li>Generated custom RISC-V SoC RTL using Chipyard generators to drive the physical design pipeline.</li>
+          <li>Engineered an RTL-to-GDSII workflow with mflowgen, migrating from Foundation to Cadence Stylus flow.</li>
+          <li>Executing full-chip synthesis and PnR on TSMC 45nm with Calibre/Innovus, validating IR drop and clock tree.</li>
+        </ul>
+      </article>
+      <article class="list-item reveal">
+        <div class="item-head">
+          <h3>
+            <a class="section-title-link" href="https://github.com/abhikkum/ESE5320/blob/main/project/Report/prj5.md">ESE 5320 Final Project: ARM+FPGA LZW Compression</a>
+          </h3>
+          <span class="item-date">Dec 2025</span>
+        </div>
+        <div class="item-tags">
+          <span>SoC Architecture</span>
+          <span>Ultra96/Zynq</span>
+          <span>FPGA</span>
+          <span>ARM NEON</span>
+          <span>Vitis HLS</span>
+          <span>DMA</span>
+        </div>
+        <ul class="item-points">
+          <li>Mapped a CDC→SHA-256→Dedup→LZW pipeline across ARM cores and FPGA fabric for real-time compression.</li>
+          <li>Achieved ~43.5 Mb/s throughput on vmlinuz with FPGA LZW offload and validated end-to-end correctness.</li>
+          <li>Reported compression ratios up to ~1.96× on large files and documented system bottlenecks in data movement.</li>
+        </ul>
+      </article>
+
       <article class="list-item reveal">
         <div class="item-head">
           <h3>
@@ -113,7 +185,7 @@ description: Selected projects and case studies.
       <article class="list-item reveal">
         <div class="item-head">
           <h3>
-            <a class="section-title-link" href="https://ese5160.github.io/PLANT_SURVIVAL_SYSTEM/">Smart Plant Survival System</a>
+            <a class="section-title-link" href="https://ese5160.github.io/PLANT_SURVIVAL_SYSTEM/">RTOS-Implementation on custom 4-Layer PCB</a>
           </h3>
           <span class="item-date">May 2025</span>
         </div>
@@ -133,7 +205,7 @@ description: Selected projects and case studies.
       <article class="list-item reveal">
         <div class="item-head">
           <h3>
-            <a class="section-title-link" href="https://upenn-embedded.github.io/final-project-dream-team/">DJ Gloves: Interactive Music Control System</a>
+            <a class="section-title-link" href="https://upenn-embedded.github.io/final-project-dream-team/">Real-Time Wireless Gesture-Control Wearable</a>
           </h3>
           <span class="item-date">Dec 2024</span>
         </div>
