@@ -2,5 +2,5 @@ Place your CV files in this folder.
 
 ```
 bundle install 
-bundle exec jekyll serve 
+bundle exec jekyll serve
 ```
